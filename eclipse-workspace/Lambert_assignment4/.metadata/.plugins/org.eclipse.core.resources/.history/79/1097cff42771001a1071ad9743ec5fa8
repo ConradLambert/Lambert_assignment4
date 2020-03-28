@@ -1,0 +1,16 @@
+import java.io.IOException;
+
+public class Application {
+
+  public static void main(String[] args) throws IOException {
+       
+	 DuplicateRemover duplicate=new DuplicateRemover();
+       
+     duplicate.remove("problem1.txt");
+       
+     duplicate.Write("unique_words.txt");
+      
+
+   }
+
+}
