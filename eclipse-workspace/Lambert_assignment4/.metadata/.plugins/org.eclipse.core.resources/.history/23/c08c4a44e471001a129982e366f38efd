@@ -70,7 +70,7 @@ public void Write(String outputFile)  {
 	   catch (IOException e) {
 		e.printStackTrace();
 	  }     
-	   System.out.println("\n");
+	
 	
 	}
 	
@@ -104,11 +104,10 @@ public void Write(String outputFile)  {
 	{
 	   String str=(String)itrator.next();
 	   try {
-		writer.write(str);
+		writer.write(str+"\n");
 	} catch (IOException exc) {
 		exc.printStackTrace();
-	}  
-	   System.out.println("\n");
+	}     
 	}
 	try {
 		writer.close();
